@@ -164,9 +164,8 @@ namespace BibliotecaMatrizes
             } while (opcao != 0);
         }
 
-        // =========================================================================
         // FUNÇÕES AUXILIARES DE LEITURA (FORA DO MAIN)
-        // =========================================================================
+        
 
         public static double[,] LerMatrizRapida(string nome)
         {
@@ -183,9 +182,9 @@ namespace BibliotecaMatrizes
             return Matrix_Read(r, c);
         }
 
-        // =========================================================================
+        
         // FUNÇÕES AUXILIARES OBRIGATÓRIAS DAS AULAS
-        // =========================================================================
+        
 
         public static void Matrix_Print(double[,] M)
         {
@@ -218,9 +217,9 @@ namespace BibliotecaMatrizes
             return (M[0, 0] * M[1, 1]) - (M[0, 1] * M[1, 0]);
         }
 
-        // =========================================================================
+        
         // 4.1. FUNÇÕES BÁSICAS A DESENVOLVER (13 VALORES)
-        // =========================================================================
+        
 
         public static double[,] Matrix_Read(int rows, int cols)
         {
@@ -401,9 +400,9 @@ namespace BibliotecaMatrizes
             return true;
         }
 
-        // =========================================================================
+        
         // 4.3. FUNÇÕES ADICIONAIS PARA OS 5 VALORES EXTRA 
-        // =========================================================================
+
 
         public static double[,] Matrix_Identity(int n)
         {
