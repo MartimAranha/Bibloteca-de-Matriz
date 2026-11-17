@@ -129,7 +129,7 @@ namespace BibliotecaMatrizes
             Console.WriteLine("\nA sair do programa...");
         }
 
-        // --- FUNÇÕES BÁSICAS CRIADAS POR JOELSON ---
+        // --- FUNÇÕES BÁSICAS CRIADAS POR JOELSON E RUI COSTA ---
 
         public static double[,] LerMatriz(int linhas, int colunas)
         {
@@ -203,12 +203,12 @@ namespace BibliotecaMatrizes
             {
                 for (int j = 0; j < cA; j++)
                 {
-                    resultado[i, j] = a[i, j] o + b[i, j]; // Corrigido por joelson
+                    resultado[i, j] = a[i, j]  + b[i, j]; // Corrigido por joelson
                 }
             }
             return resultado;
         }
-
+            
         public static double[,] MultiplicarMatrizes(double[,] a, double[,] b)
         {
             int lA = a.GetLength(0), cA = a.GetLength(1);
@@ -244,7 +244,7 @@ namespace BibliotecaMatrizes
         public static double[,] Inversa2x2(double[,] m)
         {
             double det = Determinante2x2(m);
-            if (det == 0) //  se o determinante for 0 ele vai assumir que nao tem inversa
+            if (det == 0) //  se o determinante for 0 o sistema  vai assumir que nao tem inversa
             {
                 Console.WriteLine("Erro: O determinante é zero, logo não tem inversa.");
                 return null;
